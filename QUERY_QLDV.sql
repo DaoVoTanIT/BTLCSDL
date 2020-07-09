@@ -215,14 +215,13 @@ WHERE DV.MASV IN(
     FROM SODOAN SD
     WHERE SD.NIENKHOA LIKE '%2020'
 )
---NHUNG DOAN VIEN KO CO SO DOAN
+--Những đoàn viên không có sổ đoàn
 SELECT DV.MASV, DV.HOTEN
 FROM DOANVIEN DV
 WHERE DV.MASV NOT IN( 
     SELECT MASV
     FROM SODOAN
 )
---Tổng số lượng đoàn viên tham gia hoạt động trong học kì 1.
 
 
 
